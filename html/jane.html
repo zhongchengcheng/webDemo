@@ -13,12 +13,12 @@
     <div id="head">
         <a href="#">Jane Shopping</a>
         <ul id="skin">
-            <li class="s1"><input type="checkbox"></li>
-            <li class="s2"><input type="checkbox"></li>
-            <li class="s3"><input type="checkbox"></li>
-            <li class="s4"><input type="checkbox"></li>
-            <li class="s5"><input type="checkbox"></li>
-            <li class="s6"><input type="checkbox"></li>
+            <li id="s1"></li>
+            <li id="s2"></li>
+            <li id="s3"></li>
+            <li id="s4"></li>
+            <li id="s5"></li>
+            <li id="s6"></li>
         </ul>
     </div>
     <!--头部结束-->
@@ -56,13 +56,59 @@
     <!--导航结束-->
     <!--主体开始-->
     <div id="main">
-        <div class="left">
-            <div class="lefttop"></div>
-            <div class="leftbottom"></div>
+        <div id="left">
+            <div id="lefttop">
+                <div id="lhead">
+                    <h3>最新动态</h3>
+                    <img id="down" src="../images/down.gif" >
+                    <img id="up" src="../images/up.gif" >
+                </div>
+                <ul id="news">
+                    <li title="甜美宽松毛衣今秋一定红"><a href="#">甜美宽松毛衣今秋一定红.</a></li>
+                    <li title="秋装百搭小马甲不到50"><a href="#">秋装百搭小马甲不到50.</a></li>
+                    <li title="修身韩版小西装万人疯抢"><a href="#">修身韩版小西装万人疯抢.</a></li>
+                    <li title="夏末雪纺店主含泪大甩卖"><a href="#">夏末雪纺店主含泪大甩卖.</a></li>
+                    <li title="瑞丽都疯狂推荐的秋装"><a href="#">瑞丽都疯狂推荐的秋装.</a></li>
+                    <li title="48元长款针织小开衫卖疯啦"><a href="#">48元长款针织小开衫卖疯啦.</a></li>
+                    <li title="长袖雪纺衫单穿内搭都超美"><a href="#">长袖雪纺衫单穿内搭都超美.</a></li>
+                </ul>
+            </div>
+            <div id="leftbottom">
+                <div id="lhead1">
+                    <h3>产品分类</h3>
+                    <img id="down1" src="../images/down.gif" >
+                    <img id="up1" src="../images/up.gif" >
+                </div>
+                <ul id="clo">
+                    <li>
+                        <h4>衬衫</h4>
+                        <ul>
+                            <li><a href="#">短袖衬衫</a></li>
+                            <li><a href="#">长袖衬衫</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>卫衣</h4>
+                        <ul>
+                            <li><a href="#">开襟衬衫</a></li>
+                            <li><a href="#">套头衬衫</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>衬衫</h4>
+                        <ul>
+                            <li><a href="#">休闲裤</a></li>
+                            <li><a href="#">免烫卡其裤</a></li>
+                            <li><a href="#">牛仔裤</a></li>
+                            <li><a href="#">短裤</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="right">
-            <div class="righttop">
-                <div class="pic">
+        <div id="right">
+            <div id="righttop">
+                <div id="pic" style="top: -150px;">
                     <img src="../images/ads/5.gif">
                     <img src="../images/ads/1.gif">
                     <img src="../images/ads/2.gif">
@@ -79,7 +125,83 @@
                     <span index="5">5</span>
                 </div>
             </div>
-            <div class="rightbottom"></div>
+            <div id="rightbottom">
+                <div id="rthead">
+                    <h3>新款上市</h3>
+                    <img id="rleft" src="../images/left.gif" >
+                    <img id="rright" src="../images/right.gif" >
+                </div>
+                <div id="picc">
+                    <div id="box" style="left: 0px;">
+                        <ul class="pic1">
+                            <li>
+                                <a href="#"><img src="../images/img_1.jpg"></a>
+                                <p>免烫高支棉衬衣1</p>
+                                <p>$120.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_2.jpg"></a>
+                                <p>免烫斜纹棉衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_3.jpg"></a>
+                                <p>棉小格正装衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_4.jpg"></a>
+                                <p>小米兰格衬衣蓝色</p>
+                                <p>$129.00</p>
+                            </li>
+                        </ul>
+                        <ul id="pic2">
+                            <li>
+                                <a href="#"><img src="../images/img_1.jpg"></a>
+                                <p>免烫高支棉衬衣1</p>
+                                <p>$120.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_1.jpg"></a>
+                                <p>免烫斜纹棉衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_1.jpg"></a>
+                                <p>棉小格正装衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_1.jpg"></a>
+                                <p>小米兰格衬衣蓝色</p>
+                                <p>$129.00</p>
+                            </li>
+                        </ul>
+                        <ul id="pic3">
+                            <li>
+                                <a href="#"><img src="../images/img_2.jpg"></a>
+                                <p>免烫高支棉衬衣1</p>
+                                <p>$120.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_2.jpg"></a>
+                                <p>免烫斜纹棉衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_2.jpg"></a>
+                                <p>棉小格正装衬衣</p>
+                                <p>$129.00</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../images/img_2.jpg"></a>
+                                <p>小米兰格衬衣蓝色</p>
+                                <p>$129.00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--主体结束-->

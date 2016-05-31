@@ -15,12 +15,37 @@
 }
 #head ul{
     float: right;
-    width: 140px;
+    width: 120px;
+    padding: 4px;
     background: #ffffff;
     margin: 10px 10px 0 0;
 }
 #head ul li{
     float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+#s1{
+    background: url("../images/theme.gif") no-repeat 0px -15px;
+}
+#s2{
+    background: url("../images/theme.gif") no-repeat -20px 0px;
+}
+#s3{
+    background: url("../images/theme.gif") no-repeat -40px 0px;
+}
+#s4{
+    background: url("../images/theme.gif") no-repeat -60px 0px;
+}
+#s5{
+    background: url("../images/theme.gif") no-repeat -80px 0px;
+}
+#s6{
+    background: url("../images/theme.gif") no-repeat -100px 0px;
 }
 /*头部样式结束*/
 
@@ -36,13 +61,15 @@
     float: left;
     padding-right: 15px;
     position: relative;
+    z-index: 5;
 }
 #menu #list>li a{
     display: block;
-    padding: 0 5px;
+    padding: 4px 5px;
     background: #EEEEEE;
+    font-size: 12px;
     font-weight: bold;
-    color: #4c6db4;
+    color: #0287CA;
 }
 #menu #list>li a:hover{
     background: none;
@@ -69,41 +96,144 @@
 #main{
     width: 798px;
     margin: 0 auto;
-    border: 1px solid red;
 }
-#main .left{
+
+/*主体左侧样式开始*/
+#main #left{
     float: left;
     width: 200px;
-    height: 400px;
-    border: 1px solid #6633CC;
+    border: 1px solid #ccc;
 }
-#main .right{
+#lefttop{
+    width: 200px;
+    height: 110px;
+}
+#lhead{
+    width: 200px;
+    height: 25px;
+    position: relative;
+    background: #4c6db4;
+}
+#lhead h3{
+    position: absolute;
+    left: 5px;
+    line-height: 25px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+#up{
+    position: absolute;
+    top: 7px;
+    left: 180px;
+    display: none;
+    cursor: pointer;
+}
+#down{
+    position: absolute;
+    top: 7px;
+    left: 180px;
+    display: block;
+    cursor: pointer;
+}
+#news{
+    width: 200px;
+    height: 85px;
+    overflow: hidden;
+}
+#news a{
+    font-size: 13px;
+    color: #0287CA;
+    line-height: 21px;
+    padding-left: 10px;
+}
+
+
+#leftbottom{
+    width: 200px;
+    height: 290px;
+}
+#clo{
+    position: relative;
+    width: 200px;
+    height: 265px;
+    overflow: hidden;
+}
+#clo h4{
+    cursor: pointer;
+}
+#clo>li{
+    background: url("../images/ddddd.gif") no-repeat 15px 10px;
+    font-size: 12px;
+    padding: 10px 0 0 35px;
+    line-height: 15px;
+}
+#clo li ul li{
+    background: url("../images/treeview-item.gif") no-repeat;
+    line-height: 15px;
+    font-size: 12px;
+    padding: 5px 0 0 20px;
+}
+#clo li ul{
+    display: block;
+}
+#lhead1{
+    width: 200px;
+    height: 25px;
+    position: relative;
+    background: #4c6db4;
+}
+#lhead1 h3{
+    position: absolute;
+    left: 5px;
+    line-height: 25px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+#up1{
+    position: absolute;
+    top: 7px;
+    left: 180px;
+    display: none;
+    cursor: pointer;
+}
+#down1{
+    position: absolute;
+    top: 7px;
+    left: 180px;
+    display: block;
+    cursor: pointer;
+}
+
+/*主体左侧样式结束*/
+/*主体右侧样式开始*/
+#main #right{
     float: right;
     width: 586px;
-    height: 400px;
-    border: 1px solid #0000FF;
+    height: 380px;
+    border: 1px solid #cccccc;
 }
-#main .right .righttop{
+#main #right #righttop{
     position: relative;
     width: 586px;
     height: 150px;
     overflow: hidden;
 }
-#main .right .righttop .pic{
+#main #right #righttop #pic{
     width: 586px;
     height: 1050px;
     position: absolute;
     top: 0;
 }
-#main .right .righttop .buttons{
+#main #right #righttop #buttons{
     position: absolute;
     height: 16px;
     width: 116px;
-    z-index: 2;
     bottom: 10px;
     right: 10px;
 }
-#main .right .righttop .buttons span{
+#main #right #righttop #buttons span{
     float: left;
     cursor: pointer;
     border: 1px solid orange;
@@ -114,8 +244,70 @@
     color: orange;
     background: #ffffff;
 }
-#main .right .righttop .buttons .on{
+#main #right #righttop #buttons .on{
     background: orange;
     color: #ffffff;
     font-weight: bold;
+}
+
+/*新款上市部分样式*/
+#rightbottom{
+    width: 586px;
+    height: 210px;
+    padding-top: 10px;
+}
+#rthead{
+    position: relative;
+    width: 586px;
+    height: 25px;
+    background: #4c6db4;
+}
+#rightbottom h3{
+    position: absolute;
+    left: 5px;
+    line-height: 25px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+#rleft{
+    position: absolute;
+    top: 4px;
+    left: 546px;
+    cursor: pointer;
+}
+#rright{
+    position: absolute;
+    top: 4px;
+    left: 562px;
+    cursor: pointer;
+}
+#picc{
+    position: relative;
+    width: 586px;
+    height: 185px;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+}
+#box{
+    position: absolute;
+    width: 1759px;
+    height: 185px;
+}
+#box ul{
+    float: left;
+    width: 586px;
+    height: 185px;
+}
+#box ul li{
+    background: url("../images/zoom.gif") no-repeat 50% 50%;
+    float: left;
+    padding: 20px 13px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+#box ul img{
+    width: 120px;
+    height: 120px;
 }
