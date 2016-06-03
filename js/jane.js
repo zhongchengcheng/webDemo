@@ -5,6 +5,8 @@ window.onload = function(){
     var buttons = document.getElementById("buttons").getElementsByTagName("span");
     var index = 1;
     var timer;
+    var timer1;
+    var newstimer;
     var down = document.getElementById("down");
     var up = document.getElementById("up");
     var news = document.getElementById("news");
@@ -44,10 +46,13 @@ window.onload = function(){
         rthead.style.background = "#b1d410";
     }
 
+
     //最新动态部分
     down.onclick = function () {
         up.style.display = "block";
         down.style.display = "none";
+        news.style.display = "none";
+        newsstop();
     }
     $("#down").click(function () {
         $("#news").animate({
@@ -60,6 +65,8 @@ window.onload = function(){
     up.onclick = function () {
         up.style.display = "none";
         down.style.display = "block";
+        news.style.display = "block";
+        newsplay();
     }
     $("#up").click(function () {
         $("#news").animate({
@@ -69,6 +76,21 @@ window.onload = function(){
             height:"110px"
         },1000)
     })
+
+    function newsplay(){
+        newstimer = setInterval(function () {
+            news.style.top = parseInt(news.style.top) - 20 +"px";
+            if(parseInt(news.style.top) < -120){
+                news.style.top = 0 +"px";
+            }
+        },1500)
+    }
+    function newsstop(){
+        clearInterval(newstimer);
+    }
+    news.onmouseover = newsstop;
+    news.onmouseout = newsplay;
+    newsplay();
 
 
     //产品分类部分
@@ -96,29 +118,49 @@ window.onload = function(){
             height:"265px"
         },1000)
     })
-    //$("#clo.h4").click(function(){
-    //    $("#clo.h4.ul").animate({
-    //        height:"0px"
-    //    },1000)
-    //})
+    $("#clo>h4").click(function(){
+        $("#clo>h4>ul").animate({
+            height:"0px"
+        },1000)
+    })
 
+    for(i = 0; i < buttons.length;i++){
+        buttons[i].onmouseover = function () {
+            var myIndex = parseInt(this.getAttribute('index'));
+            pic.style.top = -150 * (myIndex - index) + -150 * (index - 1);
+            index = myIndex;
+            showbuttons();
+        }
+    }
 
 
 //焦点轮播图部分
     function play(){
         timer =setInterval(function (){
             pic.style.top = parseInt(pic.style.top) -150 + "px";
-            if(parseInt(pic.style.top)< -750){
+            if(parseInt(pic.style.top)< -600){
                 pic.style.top = 0 + "px";
             }
         },3000);
+        play1();
     }
     function stop(){
         clearInterval(timer);
+        clearInterval(timer1);
     }
     righttop.onmouseover = stop;
     righttop.onmouseout = play;
     play();
+    function play1(){
+        timer1 = setInterval(function () {
+            if(index == 5){
+                index = 1;
+            }else{
+                index += 1
+            }
+            showbuttons();
+        },3000)
+    }
 
     function showbuttons(){
         for(var i = 0;i < buttons.length; i++){
@@ -149,9 +191,8 @@ window.onload = function(){
     var i = 0;
     $("#rright").click(function () {
         $("#box").animate({
-            left:"-586px"
+            left : "-586px"
         },1000)
     })
-
 
 }

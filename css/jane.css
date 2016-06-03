@@ -1,4 +1,4 @@
-/*Í·²¿ÑùÊ½¿ªÊ¼*/
+/*å¤´éƒ¨æ ·å¼å¼€å§‹*/
 #head{
     background-color: #4c6db4;
     width: 800px;
@@ -47,9 +47,9 @@
 #s6{
     background: url("../images/theme.gif") no-repeat -100px 0px;
 }
-/*Í·²¿ÑùÊ½½áÊø*/
+/*å¤´éƒ¨æ ·å¼ç»“æŸ*/
 
-/*µ¼º½ÑùÊ½¿ªÊ¼*/
+/*å¯¼èˆªæ ·å¼å¼€å§‹*/
 #menu{
     width: 780px;
     height: 16px;
@@ -90,15 +90,15 @@
     line-height: 22px;
     border-bottom: 1px solid #cccccc;
 }
-/*µ¼º½ÑùÊ½½áÊø*/
+/*å¯¼èˆªæ ·å¼ç»“æŸ*/
 
-/*Ö÷ÌåÑùÊ½¿ªÊ¼*/
+/*ä¸»ä½“æ ·å¼å¼€å§‹*/
 #main{
     width: 798px;
     margin: 0 auto;
 }
 
-/*Ö÷Ìå×ó²àÑùÊ½¿ªÊ¼*/
+/*ä¸»ä½“å·¦ä¾§æ ·å¼å¼€å§‹*/
 #main #left{
     float: left;
     width: 200px;
@@ -136,10 +136,18 @@
     display: block;
     cursor: pointer;
 }
-#news{
+#newsbox{
+    position: relative;
     width: 200px;
     height: 85px;
     overflow: hidden;
+}
+#news{
+    position: absolute;
+    width: 200px;
+    height: 214px;
+    display: block;
+    top:0;
 }
 #news a{
     font-size: 13px;
@@ -206,8 +214,8 @@
     cursor: pointer;
 }
 
-/*Ö÷Ìå×ó²àÑùÊ½½áÊø*/
-/*Ö÷ÌåÓÒ²àÑùÊ½¿ªÊ¼*/
+/*ä¸»ä½“å·¦ä¾§æ ·å¼ç»“æŸ*/
+/*ä¸»ä½“å³ä¾§æ ·å¼å¼€å§‹*/
 #main #right{
     float: right;
     width: 586px;
@@ -222,7 +230,7 @@
 }
 #main #right #righttop #pic{
     width: 586px;
-    height: 1050px;
+    height: 750px;
     position: absolute;
     top: 0;
 }
@@ -250,7 +258,7 @@
     font-weight: bold;
 }
 
-/*ĞÂ¿îÉÏÊĞ²¿·ÖÑùÊ½*/
+/*æ–°æ¬¾ä¸Šå¸‚éƒ¨åˆ†æ ·å¼*/
 #rightbottom{
     width: 586px;
     height: 210px;

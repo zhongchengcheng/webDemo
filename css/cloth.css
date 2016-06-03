@@ -1,0 +1,296 @@
+/*头部样式开始*/
+#head{
+    background-color: #4c6db4;
+    width: 800px;
+    height: 80px;
+    margin: 10px auto;
+}
+#head a{
+    float: left;
+    font-size: 36px;
+    line-height: 80px;
+    margin: 0 0 0 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+#head ul{
+    float: right;
+    width: 120px;
+    padding: 4px;
+    background: #ffffff;
+    margin: 10px 10px 0 0;
+}
+#head ul li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+#s1{
+    background: url("../images/theme.gif") no-repeat 0px -15px;
+}
+#s2{
+    background: url("../images/theme.gif") no-repeat -20px 0px;
+}
+#s3{
+    background: url("../images/theme.gif") no-repeat -40px 0px;
+}
+#s4{
+    background: url("../images/theme.gif") no-repeat -60px 0px;
+}
+#s5{
+    background: url("../images/theme.gif") no-repeat -80px 0px;
+}
+#s6{
+    background: url("../images/theme.gif") no-repeat -100px 0px;
+}
+/*头部样式结束*/
+
+/*导航样式开始*/
+#menu{
+    width: 780px;
+    height: 16px;
+    background-color: #4c6db4;
+    margin: 5px auto;
+    padding: 10px;
+}
+#list>li{
+    float: left;
+    padding-right: 15px;
+    position: relative;
+    z-index: 5;
+}
+#list>li a{
+    display: block;
+    padding: 4px 5px;
+    background: #EEEEEE;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0287CA;
+}
+#list>li a:hover{
+    background: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+#list li ul{
+    position: absolute;
+    display: none;
+    width: 80px;
+    background: #88C366;
+}
+#list li:hover ul{
+    display: block;
+}
+#list li ul li{
+    text-align: left;
+    line-height: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+/*导航样式结束*/
+/*主体样式开始*/
+#main{
+    width: 800px;
+    height: 600px;
+    margin: 10px auto;
+    border: 1px solid #cccccc;
+}
+#main .mhead{
+    width: 800px;
+    height: 25px;
+    background: #4c6db4;
+}
+#container{
+    width: 790px;
+}
+#main .mhead p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    padding-left: 10px;
+    font-weight: bold;
+}
+/*主体左侧样式*/
+#left{
+    float: left;
+    width: 385px;
+}
+#left .bos1{
+    margin: 10px 0 0 10px;
+    border: 1px solid #aaaaaa;
+    display: block;
+}
+#left .bos2{
+    margin: 10px 0 0 10px;
+    border: 1px solid #aaaaaa;
+    display: none;
+}
+#left .bos3{
+    margin: 10px 0 0 10px;
+    border: 1px solid #aaaaaa;
+    display: none;
+}
+#left .look{
+    margin: 10px 0 0 100px;
+    cursor: pointer;
+}
+#clist{
+    width: 210px;
+    height: 60px;
+    margin: 10px 0 0 10px;
+}
+#clist li{
+    float: left;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#clist img{
+    width: 60px;
+    height: 60px;
+}
+#clist img:hover{
+    outline: 1px solid #aaaaaa;
+}
+
+#table{
+    width: 380px;
+    margin: 10px auto;
+}
+#table ul{
+    width: 380px;
+    height: 22px;
+}
+#table ul li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    background: #efefef;
+    font-size: 12px;
+    border: 1px solid #cccccc;
+    padding: 0 5px;
+}
+#table ul li:hover{
+    background: #dddddd;
+    cursor: pointer;
+}
+
+#table .box{
+    width: 380px;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+}
+#table .box .box1{
+    width: 380px;
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+}
+#table .box .box2{
+    width: 380px;
+    font-size: 13px;
+    line-height: 18px;
+    display: none;
+}
+#table .box .box3{
+    width: 380px;
+    font-size: 13px;
+    line-height: 18px;
+    display: none;
+}
+
+/*主体右侧样式*/
+#right{
+    float: right;
+    width: 385px;
+    padding-top: 20px;
+}
+#right h3{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+}
+#right h3 span{
+    text-decoration: line-through;
+}
+#right p{
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+#right h4{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+}
+#right .pic{
+    width: 385px;
+    height: 35px;
+}
+#right .pic li{
+    float: left;
+    padding-right: 10px;
+}
+#right .pic img{
+    width: 35px;
+    height: 35px;
+}
+#right .pic img:hover{
+    outline: 1px solid #cccccc;
+    cursor: pointer;
+}
+#right .size{
+    padding-top: 10px;
+}
+#right .sizee{
+    width: 385px;
+    height: 22px;
+}
+#right .sizee li{
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+    height: 22px;
+}
+#right .sizee li p{
+    line-height: 22px;
+    text-align: center;
+    padding: 0 13px;
+}
+#right .sizee li:hover{
+    cursor: pointer;
+    background: #eaeaea;
+}
+#right .num{
+    position: relative;
+    width: 385px;
+    height: 20px;
+    padding-top: 12px;
+}
+#right .num h3{
+    float: left;
+}
+#right .num select{
+    position: absolute;
+    float: right;
+    left: 43px;
+    width: 40px;
+}
+#right .total{
+    padding-top: 10px;
+}
+#right .score{
+    width: 385px;
+}
+#right .score .star{
+    width: 385px;
+    height: 16px;
+    overflow: hidden;
+}
+#right .car{
+    padding-top: 20px;
+}
