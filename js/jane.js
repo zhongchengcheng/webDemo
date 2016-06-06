@@ -188,11 +188,16 @@ window.onload = function(){
             box.style.left = -1172 + "px";
         }
     }
-    var i = 0;
+    var i = 1;
     $("#rright").click(function () {
         $("#box").animate({
-            left : "-586px"
-        },1000)
-    })
+            left : -586*i+"px"
+        },1000,function(){
+                i++;
+                if(i==3){
+                i=0;}
+            }
+        );
+    });
 
 }

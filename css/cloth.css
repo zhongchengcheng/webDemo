@@ -94,7 +94,7 @@
 /*主体样式开始*/
 #main{
     width: 800px;
-    height: 600px;
+    height: 645px;
     margin: 10px auto;
     border: 1px solid #cccccc;
 }
@@ -118,6 +118,21 @@
     float: left;
     width: 385px;
 }
+#pbox1{
+    width: 385px;
+    height: 421px;
+    display: block;
+}
+#pbox2{
+    width: 385px;
+    height: 421px;
+    display: none;
+}
+#pbox3{
+    width: 385px;
+    height: 421px;
+    display: none;
+}
 #left .bos1{
     margin: 10px 0 0 10px;
     border: 1px solid #aaaaaa;
@@ -137,21 +152,22 @@
     margin: 10px 0 0 100px;
     cursor: pointer;
 }
-#clist{
+#left .clist{
+    display: block;
     width: 210px;
     height: 60px;
     margin: 10px 0 0 10px;
 }
-#clist li{
+#left .clist li{
     float: left;
     padding-right: 10px;
     cursor: pointer;
 }
-#clist img{
+#left .clist img{
     width: 60px;
     height: 60px;
 }
-#clist img:hover{
+#left .clist img:hover{
     outline: 1px solid #aaaaaa;
 }
 
@@ -287,9 +303,15 @@
     width: 385px;
 }
 #right .score .star{
-    width: 385px;
+    width: 90px;
     height: 16px;
-    overflow: hidden;
+    background: url("../images/star-matrix.gif") no-repeat 0px 0px;
+}
+#right .score .star li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
 }
 #right .car{
     padding-top: 20px;
